@@ -12,26 +12,23 @@
     </head>
     <body>
         <header class="header">
-           <div class="container padding text-center flex align-start">
+           <div class="container">
+            <nav class="nav flex justify-between align-center column">
                <a class="brand" href="#">
                    <img class="brand-image" src="assets/media/logo.png" alt="AltCampus logo">
                </a>
-               <nav class="nav">
-                   <ul class="flex">
-                       <li><a href="#">HOME</a></li>
-                       <li class="active"><a href="#">BLOG</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                   <ul class="flex align-center">
+                       <li class="nav-item"><a href="#">HOME</a></li>
+                       <li class="nav-item"><a class="active" href="#">BLOG</a></li>
+                       <li class="nav-item"><a href="#">ABOUT</a></li>
                    </ul>
                </nav>
            </div>
         </header>
         <main>
             <section class="hero">
-                <div class="container padding flex direction">
-                   <div class="hero-img full-width flex-48">
-                       <img class="full-width" src="assets/media/01.png" alt="Hero image">
-                   </div>
-                   <article class="full-width flex-48">
+                <div class="container padding flex justify-between wrap">
+                   <article class="flex-48 flex-100 order1">
                        <h1 class="heading">
                            What is Lorem Ipsum?
                        </h1>
@@ -43,6 +40,9 @@
                         </p>
                        <a class="btn" href="#">Read More</a>
                    </article>
+                   <div class="hero-img full-width flex-48 flex-100">
+                    <img class="full-width" src="assets/media/01.png" alt="Hero image">
+                </div>
                 </div>
             </section>
             <section class="blog">
@@ -50,13 +50,13 @@
                     <h2 class="heading-blog text-center">
                         OUR BLOG
                     </h2>
-                   <div class="flex">
-                    <article class="blog-container flex-30">
-                        <figure class="blog-img full-width">
+                   <div class="flex justify-between wrap">
+                    <article class="blog-container flex-30 flex-100">
+                        <figure class="blog-img">
                             <img class="full-width" src="assets/media/02.png" alt="Blog 1">
                         </figure>
                         <div class="article full-width">
-                            <h3 class="heading">
+                            <h3>
                                 Why do we use it?
                             </h3>
                             <p class="para">
@@ -67,12 +67,12 @@
                             <a class="btn" href="#">Read More</a>
                         </div>
                     </article>
-                    <article class="blog-container flex-30">
-                        <figure class="blog-img full-width">
+                    <article class="blog-container flex-30 flex-100">
+                        <figure class="blog-img ">
                             <img class="full-width" src="assets/media/03.png" alt="Blog 1">
                         </figure>
                         <div class="article full-width">
-                            <h3 class="heading">
+                            <h3>
                               Where does it come from?
                             </h3>
                             <p class="para">
@@ -83,12 +83,12 @@
                             <a class="btn" href="#">Read More</a>
                         </div>
                     </article>
-                    <article class="blog-container flex-30">
+                    <article class="blog-container flex-30 flex-100">
                         <figure class="blog-img">
                             <img class="full-width" src="assets/media/04.png" alt="Blog 1">
                         </figure>
                         <div class="article full-width">
-                            <h3 class="heading">
+                            <h3>
                                Where can I get some?
                             </h3>
                             <p class="para">
@@ -103,10 +103,10 @@
                 </div>
             </section>
         </main>
-        <footer class="padding">
-            <div class="container flex align-center">
-                <div><small>&copy;AltCampus</small></div>
-            <div class="icons">
+        <footer>
+            <div class="container flex justify-between align-center column">
+                <div class="align-center"><small>&copy;AltCampus</small></div>
+            <div class="icons align-center">
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>
